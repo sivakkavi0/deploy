@@ -1,0 +1,29 @@
+
+{% extends 'base.html' %}
+
+{% block title %}Prediction - Spam Detector{% endblock %}
+
+{% block content %}
+
+<main id="main">
+    <section id="contact" class="contact">
+        <div class="container">
+    
+          <div class="section-title">
+            <span>Prediction Form</span>
+            <h2>Prediction Form</h2>
+            <p>Spam Detection</p>
+          </div>
+    
+            <div class="col-lg-12 mt-5 mt-lg-0 d-flex align-items-stretch">
+                <form action="{% url 'predict' %}" method="post">
+                    {% csrf_token %}
+                    <label for="mess">Enter Message:</label><br>
+                    <textarea id="mess" name="mess" rows="5" cols="110" placeholder="Paste here!" required></textarea><br>
+                    <button style="background-color: green; color: white; " type="submit">Predict</button>
+                </form>
+            </div>
+        </div>
+      </section>
+</main>
+{% endblock %}

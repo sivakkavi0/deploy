@@ -1,0 +1,21 @@
+<section id="contact" class="contact">
+    <div class="container">
+
+      <div class="section-title">
+        <span>Prediction Form</span>
+        <h2>Prediction Form</h2>
+        <p>Spam Detection</p>
+      </div>
+
+        <div class="col-lg-15 mt-5 mt-lg-0 d-flex align-items-stretch">
+          <form action="{% url 'predict' %}" method="post" role="form" class="php-email-form">
+            {% csrf_token %}
+            <div class="form-group mt-3">
+              <label for="name">Message</label>
+              <textarea class="form-control" name="message" rows="10" required placeholder="Past Here!"></textarea>
+            </div>
+            <div class="text-center"><button type="submit">Start Predict </button></div>
+          </form>
+        </div>
+    </div>
+  </section>

@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block title %}About - Page{% endblock %}
+
+{% block content %}
+<section id="about" class="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <img
+            src="static/assets/img/about.png"
+            class="img-fluid"
+            alt="team"
+            width="100%"
+          />
+        </div>
+        <div class="col-lg-6 pt-4 pt-lg-0 content">
+          <h3>Spam Detection for Short Message Service (SMS)</h3>
+          <br />
+          <p class="fst-italic">
+            Over recent years, as the popularity of mobile phone devices has
+            increased, Short Message Service (SMS) has grown into a
+            multi-billion dollar industry. At the same time, reduction in
+            the cost of messaging services has resulted in growth in
+            unsolicited commercial advertisements (spams) being sent to
+            mobile phones. Due to Spam SMS, Mobile service providers suffer
+            from some sort of financial problems as well as it reduces
+            calling time for users. Unfortunately, if the user accesses such
+            Spam SMS they may face the problem of virus or malware. When SMS
+            arrives at mobile it will disturb mobile user privacy and
+            concentration. It may lead to frustration for the user. So Spam
+            SMS is one of the major issues in the wireless communication
+            world and it grows day by day.
+          </p>
+          <br />
+          <p class="fst-italic">
+            To avoid such Spam SMS people use white and black list of
+            numbers. But this technique is not adequate to completely avoid
+            Spam SMS. To tackle this problem it is needful to use a smarter
+            technique which correctly identifies Spam SMS. Natural language
+            processing technique is useful for Spam SMS identification. It
+            analyses text content and finds patterns which are used to
+            identify Spam and Non-Spam SMS.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock content %}
